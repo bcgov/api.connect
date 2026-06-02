@@ -5,13 +5,6 @@ title: ''
 labels: ''
 assignees: ''
 
----
-
----
-name: Discussions
-about: Create a report to help us improve
-
----
 
 **Summary of the issue**
 A clear and concise description of what the bug is.
