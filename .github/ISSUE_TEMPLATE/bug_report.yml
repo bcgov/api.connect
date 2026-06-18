@@ -62,10 +62,7 @@ body:
       placeholder: |
         1. Call endpoint X with payload Y...
         2. Receive HTTP status code Z...
-        
-```json
-        // Paste sanitized JSON payload or headers here
-        ```
+        [Paste sanitized JSON payload or cURL command here]
     validations:
       required: true
 
