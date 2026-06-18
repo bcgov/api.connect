@@ -2,15 +2,8 @@
 
 Welcome to the central communication and collaboration hub for the **API Users Group** and the **BC Registries Digital Services** product teams. 
 
-This repository does not host code. Instead, it is a dedicated workspace used exclusively for:
-### 💡 GitHub [Discussions](../../discussions)
-*Use Discussions for open-ended conversations, questions, and announcements.*
-*   **Announcements:** Look here for upcoming API version releases, planned maintenance windows, and breaking change notifications from our engineering teams.
-*   **Q&A:** Stuck on an integration pattern or need clarity on an API contract attribute? Ask the community and core teams here.
 
-### 🪲 GitHub [Issues](../../issues)
-*Use Issues for structured, actionable tracking.*
-*   **Bug Reports:** If an endpoint is returning an unexpected `500` error or data payload mismatch against the schema, open an issue using our bug template.
+This repository does not host code. Instead, it is a dedicated workspace used exclusively for **Discussions** (announcements, Q&A, ideas) and **Issues** (bug reporting, feature requests, change tracking) across our core service domains.
 
 ---
 
@@ -28,13 +21,13 @@ We coordinate API integrations, updates, and support for the following business 
 
 To keep communication organized and ensure the right product team addresses your items quickly, please use the following guidelines:
 
-### 💡 GitHub Discussions
+### 💡 GitHub [Discussions](../../discussions)
 *Use Discussions for open-ended conversations, questions, and announcements.*
 *   **Announcements:** Look here for upcoming API version releases, planned maintenance windows, and breaking change notifications from our engineering teams.
 *   **Q&A:** Stuck on an integration pattern or need clarity on an API contract attribute? Ask the community and core teams here.
 *   **Ideas & Feedback:** Share suggestions for workflow improvements or new endpoints you'd like to see.
 
-### 🪲 GitHub Issues
+### 🪲 GitHub [Issues](../../issues)
 *Use Issues for structured, actionable tracking.*
 *   **Bug Reports:** If an endpoint is returning an unexpected `500` error or data payload mismatch against the schema, open an issue using our bug template.
 *   **Change Requests:** Request specific, concrete modifications to existing endpoints or request access to new webhooks.
