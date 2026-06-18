@@ -1,4 +1,4 @@
-# BC Registries Digital Services - API Users Group
+# BC Registries & Digital Services - API Users Group
 
 Welcome to the central communication and collaboration hub for the **API Users Group** and the **BC Registries Digital Services** product teams. 
 
