@@ -1,27 +1,87 @@
----
-name: Bug report
-about: Report a defect
-title: ''
-labels: ''
-assignees: ''
+name: 🪲 API Bug Report
+description: Report an unexpected API error, schema mismatch, or downtime.
+title: "[Bug]: "
+labels: ["type: bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ### Thank you for reporting this issue!
+        Please fill out this form with as much technical detail as possible. 
+        ⚠️ **DO NOT include real API keys, bearer tokens, passwords, or sensitive production PII.**
 
----
+  - type: dropdown
+    id: domain
+    attributes:
+      label: Affected Service Domain
+      description: Which registry or service API is experiencing the issue?
+      options:
+        - Business Registry
+        - Personal Property Registry (PPR)
+        - Manufactured Home Registry (MHR)
+        - Payment Services
+        - Account Services
+        - Name Requests
+    validations:
+      required: true
 
-**Describe the bug**
-A clear and concise description of what the bug is.
+  - type: dropdown
+    id: environment
+    attributes:
+      label: Environment
+      description: Where did you encounter this bug?
+      options:
+        - Sandbox / Dev / Test
+        - Production
+    validations:
+      required: true
 
-**To Reproduce**
-Steps to reproduce the behavior:
-1. Go to '...'
-2. Click on '....'
-3. Scroll down to '....'
-4. See error
+  - type: input
+    id: endpoint
+    attributes:
+      label: Affected Endpoint
+      description: e.g., GET /api/v1/businesses/{identifier}/addresses
+      placeholder: VERB /path/to/endpoint
+    validations:
+      required: true
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is.
+      placeholder: Describe the discrepancy between the expected behavior and the actual result.
+    validations:
+      required: true
 
-**Actual behavior**
-A clear and concise description of what is happening.
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce & Payload
+      description: Please provide a minimized, sanitized cURL command or request/response payload.
+      placeholder: |
+        1. Call endpoint X with payload Y...
+        2. Receive HTTP status code Z...
+        
+```json
+        // Paste sanitized JSON payload or headers here
+        ```
+    validations:
+      required: true
 
-**Screenshots**
-If applicable, add screenshots to help explain your problem.
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: What should the API have returned according to the OpenAPI specs or documentation?
+    validations:
+      required: true
+
+  - type: input
+    id: correlation-id
+    attributes:
+      label: Transaction / Correlation ID (If available)
+      description: Providing the `X-Correlation-ID` or tracking header from the response helps our teams trace logs quickly.
+      placeholder: e.g., 123e4567-e89b-12d3-a456-426614174000
+    validations:
+      required: false
